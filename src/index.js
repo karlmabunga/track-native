@@ -1,7 +1,10 @@
 const express = require('express');
-const db = require('../db/index.js');
+const db = require('../db/index');
+const authRoutes = require('./routes/authRoutes');
 
 const app = express();
+
+app.use(authRoutes);
 
 app.get('/', (req, res) => {
   res.send('Hello world');
