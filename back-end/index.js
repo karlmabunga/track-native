@@ -1,7 +1,7 @@
 require('./models/User')
 require('./models/Track')
 const express = require('express');
-const db = require('../db/index');
+const db = require('./db/index');
 const bodyParser = require('body-parser');
 const authRoutes = require('./routes/authRoutes');
 const trackRoutes = require('./routes/trackRoutes');
