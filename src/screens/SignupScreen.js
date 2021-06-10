@@ -11,12 +11,15 @@ const SignupScreen = ({ navigation}) => {
 
   return (
     <View style={styles.container} >
+
     <Spacer>
     <Text h3>Sign Up for Tracker </Text>
     </Spacer>
+
     <Input autoCapitalize="none" autoCorrect={false} label="Email" onChangeText={(newEmail) => setEmail(newEmail)} />
     <Spacer />
     <Input secureTextEntry={true} autoCapitalize="none" autoCorrect={false} label="Password" onChangeText={(newPassword) => setPassword(newPassword)} />
+
     <Spacer>
     <Button title="Sign Up" onPress={() => signup({ email, password })} />
     </Spacer>
