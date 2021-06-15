@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/karlmabunga/track-native#readme",
   "dependencies": {
+    "@react-native-community/async-storage": "^1.12.1",
     "@react-native-community/masked-view": "^0.1.10",
     "axios": "^0.21.1",
     "bcrypt": "^5.0.1",
