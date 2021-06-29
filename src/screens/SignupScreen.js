@@ -20,7 +20,7 @@ const SignupScreen = ({ navigation}) => {
     <Spacer />
     <Input secureTextEntry={true} autoCapitalize="none" autoCorrect={false} label="Password" onChangeText={(newPassword) => setPassword(newPassword)} />
 
-    {errorMessage ? <Text>{state.errorMessage}</Text> : null }
+    {state.errorMessage ? <Text>{state.errorMessage}</Text> : null }
 
     <Spacer>
     <Button title="Sign Up" onPress={() => signup({ email, password })} />
